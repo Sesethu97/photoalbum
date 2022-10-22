@@ -7,8 +7,6 @@ class Categories(models.Model):
     slug = models.SlugField(unique=True)
 
 
-    # class Meta:
-    #     ordering = ('-title')
 
     def __str__(self):
         return self.title
