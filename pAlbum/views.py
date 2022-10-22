@@ -17,5 +17,9 @@ class Home(ListView):
         context["category_menu"] = category_menu
         return context
         
+def Info(request):
+    return render(request, 'info.html', {})
+
+
 def PhotoAlbum(request):
     return render(request, 'album.html', {})
