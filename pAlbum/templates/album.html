@@ -5,7 +5,11 @@
 <div class="album">
     <h1>album</h1>
     {% for post in posts %}
-        <img src="{{ post.image.url }}"/>
+        <div class="imgs">
+            <img src="{{ post.image.url }}"/>
+
+
+        </div>
     {% endfor %}
 </div>
 
