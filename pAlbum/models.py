@@ -14,7 +14,7 @@ class Categories(models.Model):
     def get_absolute_url(self):
         return reverse("photoalbum:home")
 
-class Images(models.Model):
+class Image(models.Model):
     caption = models.TextField(null=True, blank=True)
     category = models.ForeignKey(
         Categories, on_delete=models.SET_NULL, null=True, blank=True)

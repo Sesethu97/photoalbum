@@ -4,6 +4,9 @@
 
 <div class="album">
     <h1>album</h1>
+    {% for post in posts %}
+        <img src="{{ post.image.url }}"/>
+    {% endfor %}
 </div>
 
 {% endblock %}
