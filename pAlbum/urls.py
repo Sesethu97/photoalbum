@@ -3,12 +3,11 @@ from django.urls import path
 from .views import (
    Home,
    Info,
-   PhotoAlbum,
-    album
+   album
 )
 
 
-app_name = "photoalbum"
+app_name = "album"
 
 urlpatterns = [
     path("", Home.as_view(), name="home"),
